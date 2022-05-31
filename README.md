@@ -5,7 +5,7 @@
 
 ## Introduction
 
-Out of box WxCC Desktop currently offers triggering fulfilment tasks, but only for digital interactions. Triggering other processes for voice interactions requires custom widget, and this is an example of how that might be done. Initiation of business action is also written into customer history, while backend processes should continue writing history events and that way allow the agent visibility into external asynchronous process execution. Please check rich customer history component as well, for more details.
+Out of box WxCC Desktop currently offers triggering fulfilment tasks, but only for digital interactions. Triggering other processes for voice interactions requires custom widget, and this is an example of how that might be done. Initiation of business action is also written into customer history, while backend processes should continue writing history events and that way allow the agent visibility into external asynchronous process execution. Please check [rich customer history](https://github.com/dzlatic/rich-customer-history) component as well, for more details.
 
 <img src="./README-resources/WidgetScreenshoot.png" width="950"  />
 In this example, the agent can initiate business relevant actions during customer interaction of any type, with a simple click on the button.
