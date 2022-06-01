@@ -44,29 +44,7 @@ Best way to start would be to review documentation: https://developer.webex-cx.c
 
 ## Desktop Layout Configuration 
 
-You can copy the code below into your desktop layout, into "area"->"panel"->"children" list.
-
-```
-        {
-          "comp": "md-tab",
-          "attributes": { "slot": "tab", "class": "widget-pane-tab" },
-          "children": [
-            { "comp": "md-icon", "attributes": { "name": "icon-recents_16" } },
-            { "comp": "span", "textContent": "Customer History" }
-          ]
-        },
-        {
-          "comp": "md-tab-panel",
-          "attributes": { "slot": "panel", "class": "widget-pane" },
-          "children": [            {
-            "comp": "customer-history",
-            "script":"https://ciscoemearwxcccustomwidgents.s3.eu-central-1.amazonaws.com/customer-history/2.2/customer-history.js",
-            "properties": {
-              "isDarkMode": "$STORE.app.darkMode"
-            }
-          }]
-        }, 
-```
+TBD
 
 ## How To Report Errors and Propose Improvements
 
