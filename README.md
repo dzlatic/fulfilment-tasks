@@ -22,9 +22,20 @@ In this version of the component, the buttons must be defined in the file, and t
 ```
     {
         name: "Name of the task to be shown on the button", 
-        url: "URL of the fulfillment task webhook, typically created in IMI, but not limited to",
+        **url**: "URL of the fulfillment task webhook, typically created in IMI, but not limited to",
         active: false or true, in case you want to have some "fake" buttons, with no webhook defined
     }
+```
+
+Bare in mind that your webhook URL will be supplied with foillowing parameters:
+
+```
+      { 
+        preferredChannel: string value that yiou can use as selector in your flow
+        msisdn: string valie, that you can use as the customer address on the selected channel       of further communication ,
+        username: string value, a unique customer identifier in your CJaaS database. Please refer to [rich customer history](https://github.com/dzlatic/rich-customer-history) for more details.
+        eventParent: string value of last parent event ID in customer history, so that you can attach child events in your webhook flow, if you want to.
+      }
 ```
 
 ## Building & publishing the widget
