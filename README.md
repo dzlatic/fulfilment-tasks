@@ -57,7 +57,30 @@ Best way to start would be to review documentation: https://developer.webex-cx.c
 
 ## Desktop Layout Configuration 
 
-TBD
+You can copy the code below into your desktop layout, into "area"->"panel"->"children" list.
+
+**Please keep in mind that you need to replace PATH_TO_YOUR_COMPONENT_BULD_ON_PUBLIC_WEB with the path you would got in step 5. above.**
+
+```
+        {
+          "comp": "md-tab",
+          "attributes": { "slot": "tab", "class": "widget-pane-tab" },
+          "children": [
+            { "comp": "md-icon", "attributes": { "name": "icon-recents_16" } },
+            { "comp": "span", "textContent": "Tasks" }
+          ]
+        },
+        {
+          "comp": "md-tab-panel",
+          "attributes": { "slot": "panel", "class": "widget-pane" },
+          "children": [            {
+            "comp": "tasks-fulfillment",
+            "script":<PATH_TO_YOUR_COMPONENT_BULD_ON_PUBLIC_WEB>,
+            "properties": {
+              "isDarkMode": "$STORE.app.darkMode"
+            }
+          }
+```
 
 ## How To Report Errors and Propose Improvements
 
