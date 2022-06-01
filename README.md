@@ -7,10 +7,12 @@
 
 Out of box WxCC Desktop currently offers triggering fulfilment tasks, but only for digital interactions. Triggering other processes for voice interactions requires custom widget, and this is an example of how that might be done. Initiation of business action is also written into customer history, while backend processes should continue writing history events and that way allow the agent visibility into external asynchronous process execution. Please check [rich customer history](https://github.com/dzlatic/rich-customer-history) component as well, for more details.
 
-<img src="./README-resources/WidgetScreenshoot.png" width="950"  />
+<img src="./README-resources/WidgetScreenShoot1.png" width="950"  />
+
 In this example, the agent can initiate business relevant actions during customer interaction of any type, with a simple click on the button.
 
-<img src="./README-resources/WidgetScreenshoot.png" width="950"  />
+<img src="./README-resources/WidgetScreenShoot2.png" width="950"  />
+
 After click, a visual indication that action is initiated is show to the agent.
 
 In this version of the component, the buttons must be defined in the file, and the widget must be rebuilt and published for the set of buttons, per demo or production requirements. 
@@ -21,19 +23,19 @@ In this version of the component, the buttons must be defined in the file, and t
 
 ```
     {
-        name: "Name of the task to be shown on the button", 
-        **url**: "URL of the fulfillment task webhook, typically created in IMI, but not limited to",
-        active: false or true, in case you want to have some "fake" buttons, with no webhook defined
+        name: string valie, name of the task to be shown on the button", 
+        url: string value, URL of the fulfillment task webhook, typically created in IMI, but not limited to,
+        active: boolean, false or true, in case you want to have some "fake" buttons, with no webhook defined
     }
 ```
 
-Bare in mind that your webhook URL will be supplied with foillowing parameters:
+Please keep in mind that your webhook URL will be supplied with following parameters in JSON body:
 
 ```
       { 
         preferredChannel: string value that yiou can use as selector in your flow
         msisdn: string valie, that you can use as the customer address on the selected channel       of further communication ,
-        username: string value, a unique customer identifier in your CJaaS database. Please refer to [rich customer history](https://github.com/dzlatic/rich-customer-history) for more details.
+        username: string value, a unique customer identifier in your CJaaS database. Please refer to rich customer history widget for more details.
         eventParent: string value of last parent event ID in customer history, so that you can attach child events in your webhook flow, if you want to.
       }
 ```
