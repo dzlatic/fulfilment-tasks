@@ -33,7 +33,7 @@ Please keep in mind that your webhook URL will be supplied with following parame
 
 ```
       { 
-        preferredChannel: string value that you can use as selector in your flow
+        preferredChannel: string value that you can use as selector in your flow, currently hardcoded to 'sms'
         msisdn: this is a string value of ANI parameter from current desktop interaction - keep in mind that parameter could have a different nature for different digital channels
         username: string value, a unique customer identifier in your CJaaS database. Please refer to rich customer history widget for more details.
         eventParent: string value of last parent event ID in customer history, so that you can attach child events in your webhook flow, if you want to.
