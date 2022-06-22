@@ -112,7 +112,7 @@ const App: FC<IProps> = (props) => {
   }
 
   useEffect(() => {
-    logger.info(`Fulfillment Tasks component version: ${componentVersion}`)
+    logger.info(`Fulfillment Tasks component version: ${componentVersion}`);
     init();
   }, []);
 
@@ -203,7 +203,7 @@ const App: FC<IProps> = (props) => {
                       <md-button
                         color='blue'
                         onClick={() => invokeTask(button.name, button.url)}
-                        >{button.name}  {darkMode}
+                        >{button.name}
                       </md-button>
                   </td>
                 </tr>

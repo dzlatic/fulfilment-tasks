@@ -46,7 +46,7 @@ Best way to start would be to review documentation: https://developer.webex-cx.c
 
 1. The very first step would be to clone this repository: https://github.com/CiscoDevNet/webex-contact-center-widget-starter .
 
-2. Replace all files in started widget repository with those provided in this repository and rename the root directory to “fulfillment-tasks”.
+2. Replace all files in starter widget repository with those provided in this repository and rename the root directory to “fulfillment-tasks”.
 
 3. Edit "buttons.tsx" per your desired purpose.
 

@@ -2,7 +2,7 @@ import { DireflowComponent } from "direflow-component";
 import App from "./direflow-component/App";
 
 const direflowProperties = {
-  isDarkMode: false,
+  isDarkMode: false
 };
 
 
