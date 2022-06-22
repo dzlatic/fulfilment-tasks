@@ -20,7 +20,6 @@ const App: FC<IProps> = (props) => {
   const SERVICE_HOME = "check-readme-file";
 
 
-
   const [darkMode, setDarkMode] = useState(true);
   const [ani, setAni] = useState("");
   const [interactionId, setInteractionId] = useState("");
