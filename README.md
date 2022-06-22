@@ -52,7 +52,7 @@ Best way to start would be to review documentation: https://developer.webex-cx.c
 
 4. Edit "buttons.tsx" per your desired purpose.
 
-5. In **/react/src/direflow-component/App.tsx** file, in line 19 change version number to "something else". Use the same "something else" value to rename **/build** directory. 
+5. In [Asp.tsx](./react/src/direflow-component/App.tsx) file, in line 19 change version number to "something else". 
 
 6. Change value "SERVICE_HOME" in line 20 of the same file to valid value - see [this README.md file](https://github.com/dzlatic/rich-customer-history) for more info.
 
