@@ -92,5 +92,5 @@ You can copy the code below into your desktop layout, into "area"->"panel"->"chi
 
 ## How To Report Errors and Propose Improvements
 
-Please contact Darko Zlatic (dzlatic@cisco.com).
+Please contact Darko Zlatic (dzlatic@cisco.com) & Gregoire Dufournet (rdufour@cisco.com).
 
