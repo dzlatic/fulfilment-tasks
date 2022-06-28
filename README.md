@@ -89,7 +89,8 @@ You can copy the code below into your desktop layout, into "area"->"panel"->"chi
             "attributes": {
               "isDarkMode": "$STORE.app.darkMode"
             }
-          }
+          }]
+        }
 ```
 
 ## How To Report Errors and Propose Improvements
