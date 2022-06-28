@@ -84,7 +84,7 @@ You can copy the code below into your desktop layout, into "area"->"panel"->"chi
           "comp": "md-tab-panel",
           "attributes": { "slot": "panel", "class": "widget-pane" },
           "children": [            {
-            "comp": "tasks-fulfillment",
+            "comp": "fulfillment-tasks",
             "script":<PATH_TO_YOUR_COMPONENT_BULD_ON_PUBLIC_WEB>,
             "attributes": {
               "isDarkMode": "$STORE.app.darkMode"
