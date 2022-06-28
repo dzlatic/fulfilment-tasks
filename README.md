@@ -48,7 +48,7 @@ Best way to start would be to review documentation: https://developer.webex-cx.c
 
 2. Rename the folder to something like "fulfillment-tasks-XYZ" or what ever you find good for you.
 
-3. Replace all files in starter widget repository react folder with those provided in THIS repository. The best would be to do it one file by one so that you don't loose any of the files or folders you got from original startes repository.
+3. Replace all files in starter widget repository react folder with those provided in THIS repository. The best would be to do it one file by one, so that you don't loose any of the files or folders you got from original startes repository.
 
 4. Edit "buttons.tsx" per your desired purpose.
 
@@ -84,7 +84,7 @@ You can copy the code below into your desktop layout, into "area"->"panel"->"chi
           "children": [            {
             "comp": "tasks-fulfillment",
             "script":<PATH_TO_YOUR_COMPONENT_BULD_ON_PUBLIC_WEB>,
-            "properties": {
+            "attributes": {
               "isDarkMode": "$STORE.app.darkMode"
             }
           }
